@@ -49,13 +49,25 @@ public class Main {
         byte paintBrown = 4;
         byte paintWholeSchool = 120;
         byte classRoomCount = (byte) (paintWholeSchool / (paintBrown + paintWhite));
-        // тут я не понимаю, все переменные типа byte,
-        // но IDEA требует присвоить для конечного результата операции тип byte
-        // почему результату умножения//деления присваивается тип int?
+        // тут я не понимаю
+        // все переменные типа byte,
+        // но IDEA требует ПРИСВОИТЬ для конечного результата операции тип byte
+        // почему результату умножения\деления присваивается тип int?
+        // или не int, а double?
         paintWhite = (byte) (classRoomCount * paintWhite);
         paintBrown = (byte) (classRoomCount * paintBrown);
         System.out.println("В школе где "+classRoomCount+" классов, нужно "+paintWhite+" банок белой краски и "
                 +paintBrown+" банок коричневой краски");
+
+        short bananaWeight = 80;
+        float milkWeight = (float) 105 / 100;
+        short iceCreamWeight = 100;
+        short eggWeight = 70;
+        float breakfastWeight = bananaWeight * 5 + milkWeight * 200 + iceCreamWeight * 2 + eggWeight * 4;
+        System.out.println("Спортсмен съедает на завтрак " + (int) (breakfastWeight) + " грамм пищи");
+        breakfastWeight = breakfastWeight / 1000;
+        System.out.println("Спортсмен съедает на завтрак " + breakfastWeight + " килограмм пищи");
+
 
 
     }
