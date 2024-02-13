@@ -68,7 +68,19 @@ public class Main {
         breakfastWeight = breakfastWeight / 1000;
         System.out.println("Спортсмен съедает на завтрак " + breakfastWeight + " килограмм пищи");
 
-
+        short weightLoss = 7;
+        float lossPerDay = 250f;
+        float days = (float) (weightLoss * 1000 / lossPerDay);
+        System.out.println("Чтобы похудеть на " + weightLoss + " килограмм, спортсмену потребуется " + (byte) days +
+                " дней, если он будет худеть каждый день на " + (short) lossPerDay + " грамм");
+        lossPerDay = 500;
+        days = (float) (weightLoss * 1000 / lossPerDay);
+        System.out.println("Чтобы похудеть на " + weightLoss + " килограмм, спортсмену потребуется " + (byte) days +
+                " дней, если он будет худеть каждый день на " + (short) lossPerDay + " грамм");
+        lossPerDay = (float) ((500 + 250) / 2);
+        days = (float) (weightLoss * 1000 / lossPerDay);
+        System.out.println("Чтобы похудеть на " + weightLoss + " килограмм, спортсмену потребуется в среднем "
+                + (byte) days + " дней.");
 
     }
 }
