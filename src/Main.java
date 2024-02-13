@@ -45,6 +45,17 @@ public class Main {
         bottleCount = progressTime * bottlePerMinute;
         System.out.println("За январь машина произвела "+bottleCount+" бутылок.");
 
+        byte paintWhite = 2;
+        byte paintBrown = 4;
+        byte paintWholeSchool = 120;
+        byte classRoomCount = (byte) (paintWholeSchool / (paintBrown + paintWhite));
+        // тут я не понимаю, все переменные типа byte,
+        // но IDEA требует присвоить для конечного результата операции тип byte
+        // почему результату умножения//деления присваивается тип int?
+        paintWhite = (byte) (classRoomCount * paintWhite);
+        paintBrown = (byte) (classRoomCount * paintBrown);
+        System.out.println("В школе где "+classRoomCount+" классов, нужно "+paintWhite+" банок белой краски и "
+                +paintBrown+" банок коричневой краски");
 
 
     }
