@@ -70,17 +70,32 @@ public class Main {
 
         short weightLoss = 7;
         float lossPerDay = 250f;
-        float days = (float) (weightLoss * 1000 / lossPerDay);
+        float days = (float) weightLoss * 1000 / lossPerDay;
         System.out.println("Чтобы похудеть на " + weightLoss + " килограмм, спортсмену потребуется " + (byte) days +
                 " дней, если он будет худеть каждый день на " + (short) lossPerDay + " грамм");
-        lossPerDay = 500;
-        days = (float) (weightLoss * 1000 / lossPerDay);
+        lossPerDay = 500f;
+        days = (float) weightLoss * 1000 / lossPerDay;
         System.out.println("Чтобы похудеть на " + weightLoss + " килограмм, спортсмену потребуется " + (byte) days +
                 " дней, если он будет худеть каждый день на " + (short) lossPerDay + " грамм");
         lossPerDay = (float) ((500 + 250) / 2);
-        days = (float) (weightLoss * 1000 / lossPerDay);
+        days = (float) weightLoss * 1000 / lossPerDay;
         System.out.println("Чтобы похудеть на " + weightLoss + " килограмм, спортсмену потребуется в среднем "
                 + (byte) days + " дней.");
+
+        int payoutMasha = 67760;
+        int payoutDenis = 83690;
+        int payoutKristina = 76230;
+        byte paymentBoost = 10;
+        int payoutMashaNew = payoutMasha * (100 + paymentBoost)/100;
+        int payoutDenisNew = payoutDenis * (100 + paymentBoost)/100;
+        int payoutKristinaNew = payoutKristina * (100 + paymentBoost)/100;
+        System.out.println("Маша теперь получает " + payoutMashaNew + " рублей. Годовой доход вырос на " +
+                (payoutMashaNew - payoutMasha) + " рублей");
+        System.out.println("Денис теперь получает " + payoutDenisNew + " рублей. Годовой доход вырос на " +
+                (payoutDenisNew - payoutDenis) + " рублей");
+        System.out.println("Кристина теперь получает " + payoutKristinaNew + " рублей. Годовой доход вырос на " +
+                (payoutKristinaNew - payoutKristina) + " рублей");
+
 
     }
 }
