@@ -49,11 +49,8 @@ public class Main {
         byte paintBrown = 4;
         byte paintWholeSchool = 120;
         byte classRoomCount = (byte) (paintWholeSchool / (paintBrown + paintWhite));
-        // тут я не понимаю
-        // все переменные типа byte,
-        // но IDEA требует ПРИСВОИТЬ для конечного результата операции тип byte
-        // почему результату умножения\деления присваивается тип int?
-        // или не int, а double?
+        // тут я не понимаю, какой тип у данных внутри скобок,
+        // что его нужно приводить к типу данных переменной результата
         paintWhite = (byte) (classRoomCount * paintWhite);
         paintBrown = (byte) (classRoomCount * paintBrown);
         System.out.println("В школе где "+classRoomCount+" классов, нужно "+paintWhite+" банок белой краски и "
@@ -89,12 +86,12 @@ public class Main {
         int payoutMashaNew = payoutMasha * (100 + paymentBoost)/100;
         int payoutDenisNew = payoutDenis * (100 + paymentBoost)/100;
         int payoutKristinaNew = payoutKristina * (100 + paymentBoost)/100;
-        System.out.println("Маша теперь получает " + payoutMashaNew + " рублей. Годовой доход вырос на " +
-                (payoutMashaNew - payoutMasha) + " рублей");
-        System.out.println("Денис теперь получает " + payoutDenisNew + " рублей. Годовой доход вырос на " +
-                (payoutDenisNew - payoutDenis) + " рублей");
-        System.out.println("Кристина теперь получает " + payoutKristinaNew + " рублей. Годовой доход вырос на " +
-                (payoutKristinaNew - payoutKristina) + " рублей");
+        System.out.println("Маша теперь получает " + payoutMashaNew + " рублей в месяц. Годовой доход вырос на " +
+                (payoutMashaNew - payoutMasha)*12 + " рублей");
+        System.out.println("Денис теперь получает " + payoutDenisNew + " рублей в месяц. Годовой доход вырос на " +
+                (payoutDenisNew - payoutDenis)*12 + " рублей");
+        System.out.println("Кристина теперь получает " + payoutKristinaNew + " рублей в месяц. Годовой доход вырос на " +
+                (payoutKristinaNew - payoutKristina)*12 + " рублей");
 
 
     }
