@@ -13,5 +13,13 @@ public class Main {
         System.out.println("Значение переменной "+"botle"+" с типом "+"float"+" равно "+bottle);
         System.out.println("Значение переменной "+"pi"+" с типом "+"double"+" равно "+pi);
 
+        float var1 = 27.12f;
+        long var2 = 987678965549L;
+        double var3 = 2.786;
+        short var4 = 569;
+        short var5 = -159;
+        int var6 = 27897;
+        byte var7 = 67;
+
     }
 }
