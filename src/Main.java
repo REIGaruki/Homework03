@@ -28,6 +28,24 @@ public class Main {
         short paperForPupil = (short) (paperSum / (lyudmilaPavlovna + annaSergeevna + ekaterinaAndreevna));
         System.out.println("На каждого ученика рассчитано "+paperForPupil+" листов бумаги.");
 
+        int bottleCount = 16;
+        int progressTime = 2;
+        byte bottlePerMinute = (byte) (bottleCount/progressTime);
+        System.out.println("За две минуты машина производит "+bottleCount+" бутылок.");
+        progressTime = 20;
+        bottleCount = progressTime * bottlePerMinute;
+        System.out.println("За двадцать минут машина произвела "+bottleCount+" бутылок.");
+        progressTime = 60 * 24;
+        bottleCount = progressTime * bottlePerMinute;
+        System.out.println("За сутки машина произвела "+bottleCount+" бутылок.");
+        progressTime = 60 * 24 * 3;
+        bottleCount = progressTime * bottlePerMinute;
+        System.out.println("За три дня машина произвела "+bottleCount+" бутылок.");
+        progressTime = 60 * 24 * 31;
+        bottleCount = progressTime * bottlePerMinute;
+        System.out.println("За январь машина произвела "+bottleCount+" бутылок.");
+
+
 
     }
 }
