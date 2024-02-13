@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        //Task 1
         int i = 100500;
         byte b = 17;
         short sh = 999;
@@ -12,7 +13,7 @@ public class Main {
         System.out.println("Значение переменной "+"l"+" с типом "+"long"+" равно "+l);
         System.out.println("Значение переменной "+"botle"+" с типом "+"float"+" равно "+bottle);
         System.out.println("Значение переменной "+"pi"+" с типом "+"double"+" равно "+pi);
-
+        //Task 2
         float var1 = 27.12f;
         long var2 = 987678965549L;
         double var3 = 2.786;
@@ -20,14 +21,14 @@ public class Main {
         short var5 = -159;
         int var6 = 27897;
         byte var7 = 67;
-
+        //Task 3
         byte lyudmilaPavlovna = 23;
         byte annaSergeevna = 27;
         byte ekaterinaAndreevna = 30;
         short paperSum = 480;
         short paperForPupil = (short) (paperSum / (lyudmilaPavlovna + annaSergeevna + ekaterinaAndreevna));
         System.out.println("На каждого ученика рассчитано "+paperForPupil+" листов бумаги.");
-
+        //Task 4
         int bottleCount = 16;
         int progressTime = 2;
         byte bottlePerMinute = (byte) (bottleCount/progressTime);
@@ -44,7 +45,7 @@ public class Main {
         progressTime = 60 * 24 * 31;
         bottleCount = progressTime * bottlePerMinute;
         System.out.println("За январь машина произвела "+bottleCount+" бутылок.");
-
+        //Task 5
         byte paintWhite = 2;
         byte paintBrown = 4;
         byte paintWholeSchool = 120;
@@ -55,7 +56,7 @@ public class Main {
         paintBrown = (byte) (classRoomCount * paintBrown);
         System.out.println("В школе где "+classRoomCount+" классов, нужно "+paintWhite+" банок белой краски и "
                 +paintBrown+" банок коричневой краски");
-
+        //Task 6
         short bananaWeight = 80;
         float milkWeight = (float) 105 / 100;
         short iceCreamWeight = 100;
@@ -64,7 +65,7 @@ public class Main {
         System.out.println("Спортсмен съедает на завтрак " + (int) (breakfastWeight) + " грамм пищи");
         breakfastWeight = breakfastWeight / 1000;
         System.out.println("Спортсмен съедает на завтрак " + breakfastWeight + " килограмм пищи");
-
+        //Tasl 7
         short weightLoss = 7;
         float lossPerDay = 250f;
         float days = (float) weightLoss * 1000 / lossPerDay;
@@ -78,7 +79,7 @@ public class Main {
         days = (float) weightLoss * 1000 / lossPerDay;
         System.out.println("Чтобы похудеть на " + weightLoss + " килограмм, спортсмену потребуется в среднем "
                 + (byte) days + " дней.");
-
+        //Task 8
         int payoutMasha = 67760;
         int payoutDenis = 83690;
         int payoutKristina = 76230;
