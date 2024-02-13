@@ -21,5 +21,13 @@ public class Main {
         int var6 = 27897;
         byte var7 = 67;
 
+        byte lyudmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short paperSum = 480;
+        short paperForPupil = (short) (paperSum / (lyudmilaPavlovna + annaSergeevna + ekaterinaAndreevna));
+        System.out.println("На каждого ученика рассчитано "+paperForPupil+" листов бумаги.");
+
+
     }
 }
